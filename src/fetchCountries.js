@@ -10,6 +10,6 @@ export function fetchCountries(name) {
         if (responce.ok) {
             return responce.json();
         }
-        return Promise.reject(Notiflix.Notify.failure('Oops, there is no country with that name'));
+        return Promise.reject(new Error('Oops, there is no country with that name'));
     });
 };

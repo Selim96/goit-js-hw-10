@@ -42,7 +42,7 @@ function searchFunction() {
             countryCard(data);
             return;
         }
-    }).catch(err => err);
+    }).catch(err => Notiflix.Notify.failure(err.message));
 }
 
 function renderList(data) {
