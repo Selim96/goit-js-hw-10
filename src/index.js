@@ -34,6 +34,7 @@ function searchFunction() {
             return;
         }
         if (data.length === 1) {
+            console.log('Yes');
             const markup = countryCard(data);
             info.innerHTML = markup;
             return;
@@ -52,7 +53,7 @@ function renderList(data) {
 }
 
 function countryCard({ name, flags, capital, languages, population }) {
-    console.log(flags);
+    console.log(name.official);
     const language = Object.values({...languages});
     const langString = language.join(", ");
     return infocard = `<div class="country"
