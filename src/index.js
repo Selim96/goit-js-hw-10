@@ -12,13 +12,6 @@ const info = document.querySelector('.country-info');
 input.style.border = "4px solid rgba(200, 80, 50)";
 input.style.backgroundColor = "#c0d49f"
 
-const languages = {
-    eng: "English",
-    smo: "Samoan",
-};
-    
-console.log();
-
 input.addEventListener("input", debounce(searchFunction, DEBOUNCE_DELAY));
 
 function searchFunction() {
