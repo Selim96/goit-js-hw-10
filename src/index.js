@@ -9,8 +9,9 @@ const input = document.querySelector('#search-box');
 const list = document.querySelector('.country-list');
 const info = document.querySelector('.country-info');
 
-input.style.border = "4px solid rgba(200, 80, 50)";
+input.style.border = "3px solid rgba(200, 80, 50)";
 input.style.backgroundColor = "#c0d49f"
+input.style.borderRadius = "5px";
 
 input.addEventListener("input", debounce(searchFunction, DEBOUNCE_DELAY));
 
